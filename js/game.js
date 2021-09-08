@@ -80,7 +80,7 @@
 
   setInterval(kvadratMove, 20);
 
-  $("#krug").click(function (event){
+  $("#krug").mousedown(function (event){
     kvadrat = document.getElementById("kvadrat");
     kvadratXY = kvadrat.getBoundingClientRect();
     if (krugX+5 > kvadratXY.x && krugX+5 < kvadratXY.x+kvadratXY.width && krugY+5 > kvadratXY.y && krugY+5 < kvadratXY.y+kvadratXY.height){
